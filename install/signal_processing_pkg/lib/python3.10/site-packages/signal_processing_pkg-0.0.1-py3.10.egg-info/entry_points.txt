@@ -1,5 +1,0 @@
-[console_scripts]
-lp_filter = signal_processing_pkg.lp_filter:main
-present_data = signal_processing_pkg.present_data:main
-signal_source = signal_processing_pkg.signal_source:main
-
