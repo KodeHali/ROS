@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/signal_processing_pkg/signal_processing_pkg.egg-info
+writing ../../build/signal_processing_pkg/signal_processing_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/signal_processing_pkg/signal_processing_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/signal_processing_pkg/signal_processing_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/signal_processing_pkg/signal_processing_pkg.egg-info/requires.txt
+writing top-level names to ../../build/signal_processing_pkg/signal_processing_pkg.egg-info/top_level.txt
+writing manifest file '../../build/signal_processing_pkg/signal_processing_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/signal_processing_pkg/signal_processing_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/signal_processing_pkg/signal_processing_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hali/ros2_ws/build/signal_processing_pkg/build
+creating /home/hali/ros2_ws/build/signal_processing_pkg/build/lib
+creating /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg
+copying signal_processing_pkg/signal_source.py -> /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg
+copying signal_processing_pkg/__init__.py -> /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg
+copying signal_processing_pkg/present_data.py -> /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg
+copying signal_processing_pkg/lp_filter.py -> /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg
+running install
+running install_lib
+creating /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg
+copying /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg/signal_source.py -> /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg
+copying /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg/__init__.py -> /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg
+copying /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg/present_data.py -> /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg
+copying /home/hali/ros2_ws/build/signal_processing_pkg/build/lib/signal_processing_pkg/lp_filter.py -> /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg
+byte-compiling /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg/signal_source.py to signal_source.cpython-310.pyc
+byte-compiling /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg/present_data.py to present_data.cpython-310.pyc
+byte-compiling /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg/lp_filter.py to lp_filter.cpython-310.pyc
+running install_data
+creating /home/hali/ros2_ws/install/signal_processing_pkg/share/ament_index
+creating /home/hali/ros2_ws/install/signal_processing_pkg/share/ament_index/resource_index
+creating /home/hali/ros2_ws/install/signal_processing_pkg/share/ament_index/resource_index/packages
+copying resource/signal_processing_pkg -> /home/hali/ros2_ws/install/signal_processing_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/hali/ros2_ws/install/signal_processing_pkg/share/signal_processing_pkg
+copying signal_raw.dat -> /home/hali/ros2_ws/install/signal_processing_pkg/share/signal_processing_pkg
+running install_egg_info
+Copying ../../build/signal_processing_pkg/signal_processing_pkg.egg-info to /home/hali/ros2_ws/install/signal_processing_pkg/lib/python3.10/site-packages/signal_processing_pkg-0.0.1-py3.10.egg-info
+running install_scripts
+Installing lp_filter script to /home/hali/ros2_ws/install/signal_processing_pkg/lib/signal_processing_pkg
+Installing present_data script to /home/hali/ros2_ws/install/signal_processing_pkg/lib/signal_processing_pkg
+Installing signal_source script to /home/hali/ros2_ws/install/signal_processing_pkg/lib/signal_processing_pkg
+writing list of installed files to '/home/hali/ros2_ws/build/signal_processing_pkg/install.log'
