@@ -7,11 +7,11 @@ class SignalSource(Node):
     def __init__(self):
         super().__init__('signal_source')
         self.publisher_ = self.create_publisher(Float32, '/signal_raw', 10)
-        timer_period = 0.05  # 20 Hz
+        timer_period = 0.05 
         self.timer = self.create_timer(timer_period, self.publish_signal)
         self.index = 0
 
-        # Get the file path from the package share directory
+        # Had some trouble with the file path initially
         package_path = os.path.join(os.getenv('AMENT_PREFIX_PATH').split(':')[0], 'share', 'signal_processing_pkg')
         file_path = os.path.join(package_path, 'signal_raw.dat')
 
@@ -29,7 +29,7 @@ class SignalSource(Node):
             self.publisher_.publish(Float32(data=value))
             self.index += 1
         else:
-            self.index = 0  # Reset index for looping
+            self.index = 0  # REseting index to loop
 
 def main(args=None):
     rclpy.init(args=args)

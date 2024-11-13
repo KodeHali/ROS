@@ -12,14 +12,14 @@ b2 = 0.0036126
 
 class LowPassFilter:
     def __init__(self):
-        self.y = [0.0, 0.0]  # Previous outputs y[k-1], y[k-2]
-        self.u = [0.0, 0.0]  # Previous inputs u[k-1], u[k-2]
+        self.y = [0.0, 0.0]  
+        self.u = [0.0, 0.0] 
 
     def do_filter_calc(self, u_current):
-        # Calculate the current output using the difference equation
+        # Calculating the output using the difference equation
         y_current = -a1 * self.y[0] - a2 * self.y[1] + b1 * u_current + b2 * self.u[0]
 
-        # Update the history of inputs and outputs
+        # UPdating the inptu and output history
         self.y[1] = self.y[0]
         self.y[0] = y_current
         self.u[1] = self.u[0]
@@ -33,7 +33,7 @@ class LPFilterNode(Node):
         self.filter = LowPassFilter()
         self.publisher = self.create_publisher(Float32, '/signal_filtered', 10)
         self.subscription = self.create_subscription(Float32, '/signal_raw', self.callback, 10)
-        self.subscription  # Prevent unused variable warning
+        self.subscription  
 
     def callback(self, msg):
         raw_value = msg.data
@@ -50,4 +50,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
